@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The OG Coders</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+        header {
+            background-color: #7f9421;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            background-color: #7f9421;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #4c590f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to The OG Coders</h1>
+    </header>
+    <div class="container">
+        <h2>Get Started</h2>
+        <p>Already have an account? <a href="#" id="loginBtn" class="btn">Login</a></p>
+        <p>Don't have an account yet? <a href="#" id="signupBtn" class="btn">Sign Up</a></p>
+    </div>
+
+    <script>
+        document.getElementById("loginBtn").addEventListener("click", function() {
+            window.location.href = "login.html"; // Redirect to login page
+        });
+
+        document.getElementById("signupBtn").addEventListener("click", function() {
+            window.location.href = "signup.html"; // Redirect to sign up page
+        });
+    </script>
+</body>
+</html>
